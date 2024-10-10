@@ -13,6 +13,7 @@ class Changetheme extends StatelessWidget {
       body: Stack(
         children: [
           Container(
+            width: 420.0,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(AppImages.choosemode),
@@ -35,6 +36,34 @@ class Changetheme extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(100.0),
+                          border: Border.all(color: Colors.grey),
+                        ),
+                        child: SvgPicture.asset(AppVectors.lightmode),
+                      ),
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(100.0),
+                          border: Border.all(color: Colors.grey),
+                        ),
+                        child: SvgPicture.asset(AppVectors.lightmode),
+                      ),
+                    ],
                   ),
                   const SizedBox(
                     height: 20,
